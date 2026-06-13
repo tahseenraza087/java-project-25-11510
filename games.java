@@ -1,8 +1,8 @@
-class Player {
+class Main {
     private String name;
     private int score;
 
-    public Player(String name, int score) {
+    public Main(String name, int score) {
         this.name = name;
         this.score = score;
     }
@@ -16,16 +16,14 @@ class Player {
     }
 
     public static void main(String[] args) {
-        
-        Player[] players = {
-            new Player("Rahul", 95),
-            new Player("Ankit", 88),
-            new Player("Priya", 82)
+        Main[] players = {
+            new Main("Rahul", 95),
+            new Main("Ankit", 88),
+            new Main("Priya", 82)
         };
-
         
         System.out.println("--- GAME SCOREBOARD ---");
-        for (Player p : players) {
+        for (Main p : players) {
             System.out.println("Player: " + p.getName() + " | Score: " + p.getScore());
         }
     }
